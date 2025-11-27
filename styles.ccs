@@ -1,0 +1,234 @@
+/* ==========================
+   RESET DEFAULTS
+   ========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element width */
+}
+
+/* ==========================
+   TYPE SELECTORS
+   ========================== */
+body {
+    font-family: Arial, sans-serif; /* Visual rule: font-family */
+    background-color: #f5f7fa; /* Visual rule: background-color */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #004aad; /* Visual rule: color */
+}
+
+p {
+    color: #333; /* Type selector example */
+    font-size: 1rem;
+}
+
+/* ==========================
+   ID SELECTORS
+   ========================== */
+#main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* ==========================
+   CLASS SELECTORS
+   ========================== */
+.form-section {
+    background-color: white;
+    border-radius: 10px; /* Box model: border-radius */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px; /* Box model: padding */
+    margin: 20px auto; /* Box model: margin and center with auto */
+    max-width: 800px; /* Box model: max-width */
+}
+
+/* Multiple class selectors example */
+.green.bold {
+    color: green;
+    font-weight: bold;
+}
+
+/* ==========================
+   MULTIPLE SELECTORS
+   ========================== */
+h1, h2, .menu {
+    margin-bottom: 15px;
+}
+
+/* ==========================
+   DESCENDANT COMBINATORS
+   ========================== */
+.form-section label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ==========================
+   ATTRIBUTE SELECTORS
+   ========================== */
+input[type*="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* ==========================
+   PSEUDO-CLASSES
+   ========================== */
+input[type="submit"]:hover {
+    background-color: #00347a; /* Visual rule: color change on hover */
+}
+
+input:focus {
+    border-color: #004aad; /* Highlight field when focused */
+    outline: none;
+}
+
+input:disabled {
+    background-color: #e0e0e0;
+}
+
+a:visited {
+    color: #004aad;
+}
+
+a:active {
+    color: #00347a;
+}
+
+/* ==========================
+   BOX MODEL & LAYOUT
+   ========================== */
+header, nav, section, article, aside, footer {
+    padding: 20px; /* Padding */
+    margin: 10px; /* Margin */
+}
+
+nav {
+    background-color: #e3e8f0;
+    text-align: center;
+    border-radius: 8px; /* Box model */
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #004aad;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input, select, textarea {
+    width: 100%; /* Box model: width */
+    margin-bottom: 15px;
+    padding: 8px; /* Padding */
+    border-radius: 4px; /* Box model */
+}
+
+/* Shorthand examples */
+form {
+    margin: 10px auto 20px auto; /* margin shorthand: top right bottom left */
+    padding: 10px 15px 10px 15px; /* padding shorthand */
+}
+
+.salary-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.salary-display {
+    font-weight: bold;
+    color: #004aad;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Visibility example */
+.hidden {
+    visibility: hidden;
+}
+
+/* Footer styling */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Blockquote styling */
+blockquote {
+    color: white;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Inline CSS was applied in the HTML example for #main-title */
+
+/* ==========================
+   VISUAL RULES
+   ========================== */
+h2 {
+    font-size: 1.8rem;
+}
+
+p, label {
+    font-size: 1rem;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #004aad;
+    color: white;
+}
+
+/* ==========================
+   MEDIA / ASSETS
+   ========================== */
+aside {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* ==========================
+   OPTIONAL: !important demonstration
+   ========================== */
+.salary-display {
+    color: #004aad !important; /* overrides any other color rules */
+}
